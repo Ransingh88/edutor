@@ -18,7 +18,7 @@ const Landing = () => {
                 <div className="landing__container">
                     
                     <div className="landing__left">
-                        <h1>Connect with <br /> your mentor</h1>
+                        <h1>Connect with <br /> your mentors</h1>
                         <p className="landing__slogan">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo iste aliquam debitis ad ratione. Quidem.</p>
                         <div className="landing__getStarted">Get Started</div>
                     </div>
