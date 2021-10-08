@@ -14,6 +14,9 @@
     "react-router": "^5.2.1",
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
+    "stream-chat": "^4.2.0",
+    "stream-chat-react": "^6.9.1",
+    "universal-cookie": "^4.0.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
