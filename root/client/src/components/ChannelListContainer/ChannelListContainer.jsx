@@ -18,6 +18,17 @@ const ChannelListContainer = () => {
           </div>
           <div className="channelList__header">
               <p className="channelList__logoName">Edutor</p>
+              <ChannelSearch />
+              <ChannelList
+                filters={{}}
+                  channelRenderFilterFn={()=>{} }
+                  List={(listProp) => (
+                      <TeamChannelList
+                          {...listProp}
+                          type="team"
+                      />
+                  )}
+              />
           </div>
     </div>
   );
