@@ -18,6 +18,39 @@ const ChannelListContainer = () => {
           </div>
           <div className="channelList__header">
               <p className="channelList__logoName">Edutor</p>
+              <ChannelSearch />
+              <ChannelList
+                filters={{}}
+                  channelRenderFilterFn={()=>{} }
+                  List={(listProp) => (
+                      <TeamChannelList
+                          {...listProp}
+                          type="team"
+                      />
+                  )}
+                  Preview={(previewProps) => (
+                      <TeamChannelPreview
+                          {...previewProps}
+                          type="team"
+                      />
+                  )}
+              />
+              <ChannelList
+                filters={{}}
+                  channelRenderFilterFn={()=>{} }
+                  List={(listProp) => (
+                      <TeamChannelList
+                          {...listProp}
+                          type="messaging"
+                      />
+                  )}
+                  Preview={(previewProps) => (
+                      <messagingChannelPreview
+                          {...previewProps}
+                          type="messaging"
+                      />
+                  )}
+              />
           </div>
     </div>
   );

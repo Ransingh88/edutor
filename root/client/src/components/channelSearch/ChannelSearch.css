@@ -1,0 +1,17 @@
+.channelSearch{
+    background-color: whitesmoke;
+    margin: 1rem 0;
+    padding: 0.2rem 0.4rem;
+    border-radius:8px
+}
+.channelSearch__inputSearch{
+    display:flex;
+    align-items:center;
+}
+.channelSearch__inputSearch input{
+    height:25px;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    padding-left: 0.5rem;
+}
