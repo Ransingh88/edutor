@@ -1,18 +1,33 @@
 import React from "react";
 import "./ChannelListContainer.css";
 import { ChannelList, useChatContext } from "stream-chat-react";
-import cookies from "universal-cookie";
+import Cookies from "universal-cookie";
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from "../index";
 import { IoLogOut, IoHome } from "react-icons/io5";
 
+const cookies = new Cookies()
+
+
 const ChannelListContainer = () => {
+
+  const logout = () => {
+    cookies.remove("token");
+    cookies.remove('userId');
+    cookies.remove('username');
+    cookies.remove('fullName');
+    cookies.remove('phone');
+    cookies.remove('avatarURL');
+    cookies.remove('hashedPassword');
+    window.location.reload()
+}
+
   return (
     <div className="channelList">
       <div className="channelList__sidebar">
         <div className="channelList_sidebar_icon">
           <IoHome />
         </div>
-        <div className="channelList_sidebar_icon">
+        <div className="channelList_sidebar_icon" onClick={logout}>
           <IoLogOut />
         </div>
           </div>
