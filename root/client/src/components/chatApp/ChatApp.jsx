@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import { StreamChat } from 'stream-chat'
 import { Chat } from 'stream-chat-react'
 import Cookies from 'universal-cookie'
-import './ChatApp.css'
 import 'stream-chat-react/dist/css/index.css'
+import './ChatApp.css'
 import {ChannelContainer, ChannelListContainer, Auth} from '../index'
 
 const cookies = new Cookies()

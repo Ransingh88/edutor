@@ -1,13 +1,10 @@
 import './App.css';
-import {Auth, ChatApp} from './components';
-import Landing from './pages/LandingPage/Landing';
+import Router from './routes/Router';
 
 function App() {
   return (
     <div className="App">
-      {/* <Landing/> */}
-      <ChatApp />
-      {/* <Auth/> */}
+      <Router/>
     </div>
   );
 }

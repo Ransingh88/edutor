@@ -2,7 +2,7 @@
 display: flex;
 }
 .channelList__sidebar{
-    background-color: blue;
+    background-color: rgb(8, 51, 133);
     padding: 1rem;
     height: 100vh;
     display: flex;

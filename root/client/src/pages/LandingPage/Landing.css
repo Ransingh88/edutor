@@ -23,8 +23,11 @@
     display: flex;
     color: whitesmoke;
     align-items: center;
-    justify-content:space-between;
-    
+    justify-content:space-between; 
+}
+.landing__menus a{
+    text-decoration: none;
+    color: inherit;
 }
 .landing__menus p{
 padding: 0.4rem 1rem;
