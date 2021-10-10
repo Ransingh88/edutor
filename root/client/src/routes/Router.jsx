@@ -6,6 +6,7 @@ import VideoChat from '../components/Video/VideoChat'
 import Landing from '../pages/LandingPage/Landing'
 import Login from '../components/Login/Login'
 import Sign from '../components/Sign/Sign'
+import About from '../components/About/About'
   
 const Router = () => {
     return (
@@ -13,6 +14,9 @@ const Router = () => {
             <Switch >
                 <Route path="/" exact>
                         <Landing/>
+                </Route>
+                 <Route path="/about">
+                        <About/>
                 </Route>
                 <Route path="/chat">
                         <ChatApp/>

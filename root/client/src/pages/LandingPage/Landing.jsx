@@ -2,6 +2,7 @@ import React from 'react'
 import './Landing.css'
 import { Link } from 'react-router-dom'
 import Footer from '../../components/footer/Footer'
+import About from "../../components/About/About"
 
 
 const Landing = () => {
@@ -30,6 +31,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            <About/>
             <Footer/>
         </div>
     )
