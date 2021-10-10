@@ -1,5 +1,5 @@
 module.exports = {
-    ...require('./auth'),
+    ...require('./authh'),
     ...require('./poll'),
   };
   
@@ -10,4 +10,4 @@ module.exports = {
         message: err.message || 'Something went wrong.',
       },
     });
-  };
+};

@@ -22,8 +22,8 @@ const Auth = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const {fullName,username,password,phone,avatarURL} = form
-        const URL = 'http://localhost:8080/auth'
-        const { data:{token, userId,hashedPassword} } = await axios.post(`${URL}/${isSignup ? 'signupp' : 'loginn'}`, {
+        const URL = 'http://localhost:8080/authe'
+        const { data:{token, userId,hashedPassword} } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
             username,password,fullName,phone,avatarURL
         })
 

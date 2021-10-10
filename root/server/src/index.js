@@ -7,8 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 5000
 
 const bodyParser = require('body-parser');
-const routes = require('./routes');
-const handle = require('./handlers');
+const routes = require('./routes/auth3');
+// const handle = require('./handlers');
 app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded());
@@ -24,15 +24,15 @@ const io = require("socket.io")(server, {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/api/auth', routes.auth);
-app.use('/api/polls', routes.poll);
+app.use('/api/auth', routes);
+// app.use('/api/polls', routes.poll);
 
-app.use((req, res, next) => {
-  let err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
-app.use(handle.error);
+// app.use((req, res, next) => {
+//   let err = new Error('Not Found');
+//   err.status = 404;
+//   next(err);
+// });
+// app.use(handle.error);
 
 
 
@@ -57,7 +57,7 @@ io.on("connection", (socket) => {
 })
 
 
-app.use('/auth', authRoutes)
+app.use('/authe', authRoutes)
 
 app.listen(PORT, async () => {
     await connect();
