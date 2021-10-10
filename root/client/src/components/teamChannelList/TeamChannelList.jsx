@@ -1,9 +1,13 @@
 import React from 'react'
 import './TeamChannelList.css'
 
-import {IoAdd} from 'react-icons/io5'
+import { IoAdd } from 'react-icons/io5'
+import {AddChannel} from '../assets/AddChannel'
 
-const TeamChannelList = ({children, error= false, loading, type}) => {
+const TeamChannelList = ({children, error= false, loading, type,isCreating,
+                    setIsCreating,
+                    setCreateType,
+                    setIsEditing}) => {
     if (error) {
         return (type === 'team' ? (
             <div className="teamChannelList">
@@ -29,7 +33,13 @@ const TeamChannelList = ({children, error= false, loading, type}) => {
             <div className="teamChannelList_header">
                 <p className="teamChannelList__title">
                     {type === "team" ? "Channels" : "Direct Messages"}
-                    {/* button Add channel */}
+                    <AddChannel
+                    isCreating={isCreating}
+                    setIsCreating={setIsCreating}
+                    setCreateType={setCreateType}
+                        setIsEditing={setIsEditing}
+                        type={type === 'team' ? 'team' : 'messaging'}
+                    />
                 </p>
             </div>
             {children}

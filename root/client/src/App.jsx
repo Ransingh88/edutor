@@ -1,12 +1,10 @@
 import './App.css';
-import {ChatApp} from './components';
-import Landing from './pages/LandingPage/Landing';
+import Router from './routes/Router';
 
 function App() {
   return (
     <div className="App">
-      {/* <Landing/> */}
-      <ChatApp/>
+      <Router/>
     </div>
   );
 }

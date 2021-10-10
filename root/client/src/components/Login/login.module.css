@@ -1,0 +1,77 @@
+.main_log{
+    width: 500px;
+    margin:100px auto;
+   border-radius: 10px;
+   background-color: #86A3F1;
+   background-image: linear-gradient(45deg , #1D4094 , #86A3F1);
+    padding: 20px;
+}
+.log_upper{
+    width: 80%;
+    margin: auto;
+}
+.log_icon{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+   
+   
+}
+.log_icon img{
+    height: 100%;
+    width: 100%;
+}
+.log_head{
+    color: #EDEFF6;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.log_tnc{
+    color: white;
+}
+.log_divide{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.log_divide > span{
+color: white;
+margin-left: 10px;
+margin-right: 10px;
+align-items: center;
+margin-top: -2px;
+  
+}
+.log_lin{
+    background-color: #fff;
+    height: 1px;
+    position: relative;
+    top: 8px;
+    width: 100%;
+    
+}
+.log_botm{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.log_botm > span{
+   align-items: center;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.log_ftxt{
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
