@@ -21,7 +21,7 @@ export default function About() {
                         <h3>Builds a good relationship with the mentors</h3>
                     </div>
                     <div className={styles.ab_img}>
-                        <img src="https://image.freepik.com/free-vector/telecommuting-concept-illustration_114360-1620.jpg" alt="" />
+                        <img src="https://thumbs.dreamstime.com/b/online-education-distance-learning-concept-man-using-computer-home-video-conferencing-to-male-teacher-man-using-computer-196258591.jpg" alt="" />
                     </div>
                 </div>
                 
