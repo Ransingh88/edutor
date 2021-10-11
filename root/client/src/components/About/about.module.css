@@ -1,12 +1,12 @@
 .about{
- background-color: #86a3f1;
-    background-image: linear-gradient(to bottom, #1d4094, #86a3f1);
+ /* background-color: #86a3f1; */
+    /* background-image: linear-gradient(to bottom, #1d4094, #86a3f1); */
     text-align: center;
     padding-top: 50px;
 }
 .about h1{
    color: white;
-    font-size:80px;
+    font-size:60px;
     font-weight: 900;
 }
 .info{

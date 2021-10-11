@@ -1,8 +1,9 @@
-.landing__landing{
-    height:100vh;
+ .landing{
+    /* height:100vh; */
     background-color: #86a3f1;
     background-image: linear-gradient(45deg, #1d4094, #86a3f1);
 }
+/* .landing__landing{} */
 .landing__navbar{
     padding: 1.5rem 6rem;
     display: flex;

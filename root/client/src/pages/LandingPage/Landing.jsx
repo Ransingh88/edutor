@@ -7,6 +7,7 @@ import About from "../../components/About/About"
 
 const Landing = () => {
     return (
+        <>
         <div className="landing">
             <div className="landing__landing">
                 <div className="landing__navbar">
@@ -32,8 +33,9 @@ const Landing = () => {
                 </div>
             </div>
             <About/>
-            <Footer/>
         </div>
+            <Footer/>
+            </>
     )
 }
 
