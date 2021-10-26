@@ -3,9 +3,9 @@ require('dotenv').config()
 
 // dotenv.config({ path: "../../config.env" });
 
-// const DB = process.env.DATABASE;
+const DB = process.env.MONGODB_URL;
 const connect = () => {
-    return mongoose.connect("mongodb+srv://shubham:Shubham%40007@cluster0.wktds.mongodb.net/edut?retryWrites=true&w=majority")
+    return mongoose.connect(DB)
 }
 
 
