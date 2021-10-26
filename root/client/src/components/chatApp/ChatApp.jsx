@@ -8,7 +8,7 @@ import './ChatApp.css'
 import {ChannelContainer, ChannelListContainer, Auth} from '../index'
 
 const cookies = new Cookies()
-const apiKey = '4u7mp9afg9rx'
+const apiKey = 's4utbz34g9mb' //4u7mp9afg9rx--before
 const authToken = cookies.get("token")
 const client = StreamChat.getInstance(apiKey)
 
